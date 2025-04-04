@@ -1,0 +1,30 @@
+{
+  "name": "km-ui",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rm -rf dist && node esbuild.js && tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "esbuild": "^0.25.2",
+    "release-it": "^18.1.2",
+    "typescript": "^5.8.2"
+  },
+  "dependencies": {
+    "esbuild-node-externals": "^1.18.0"
+  },
+  "release-it": {
+    "npm": {
+      "publish": true
+    }
+  },
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ]
+}
